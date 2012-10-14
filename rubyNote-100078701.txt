@@ -1,0 +1,45 @@
+﻿to_a   //convert something into array
+       //ex.lines.to_a bytes.to_a chars.to_a
+
+join   // The join method took that list of reversed lines and put them together into a string. 
+       // could have also just used to_s
+
+poem.include? "my hand"      //Exclamations. Methods may have exclamations (and also question marks) in their name. 
+                             //詩裡面是否有my hand? include is a method
+
+poem.lines.to_a.reverse.join //Chaining methods lets you get a lot more done. Break up a poem, reverse it, and reassemble it
+
+
+:     //When you place a colon in front of a simple word, you get a symbol. Symbols are cheaper than strings (in terms of computer memory.) 
+
+
+books = {}              //hash. hash won't keep things in order. That's not their job. It'll just pair up two things: a key and a value. 
+
+books["Gravity's Rainbow"]=:splendid   //將一筆資料放進去包含書名和評價
+
+books["Gravity's Rainbow"] //輸入可得評價
+
+Hashes=> {}
+
+Symbols=> :splendid
+
+Blocks=> books.values.each{|rate| ratings[rate]+=1}
+//Blocks are always attached to methods. Like the times
+
+
+FileUtils.cp('/comics.txt','/Home/comics­.txt')  //加到home底下
+
+do..end      //.. means you can enter more command
+
+
+File.foreach  //is a method which opens a file and hands each line to the block. The line variable inside the do...end block took turns with each line in the file.
+split         //is a method for strings, which breaks the string up into an array. An axe is laid on the colon and the line is chopped in half, giving us the url and name for each comic.
+strip         //removes extra spaces around the name. Just in case.
+
+class         // There are many attribute methods like this which add little settings to classes. These attributes are just variables attached to a class.
+
+
+quiz hint:
+Hash.new
+=> {}
+
