@@ -1,0 +1,17 @@
+
+
+
+
+Ruby On Rails Note:
+
+1.請選「使用現有虛擬檔案」掛載「saasbook-vm-0.9.1」
+2.接著，請依視頻教學動作 （網址：http://ppt.cc/rk8q）
+  follow the Steps in Video
+  i.enter code is "saasbook" do not waste time on using guest mode!!
+  ii.device=>install guest additions
+  iii.authentication verify key the same code
+  iv.enter where rottenpotatoes folder locate
+  v. rails server
+
+
+3.Done!!!!!!!!!!!!!!!!!!11
