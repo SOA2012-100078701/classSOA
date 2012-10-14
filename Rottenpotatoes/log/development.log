@@ -1,0 +1,127 @@
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2012-09-19 16:37:01 -0700
+Served asset /rails.png - 304 Not Modified (30ms)
+
+
+Started GET "/home" for 127.0.0.1 at 2012-09-19 16:37:06 -0700
+
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/public" for 127.0.0.1 at 2012-09-19 16:37:26 -0700
+
+ActionController::RoutingError (No route matches [GET] "/public"):
+  
+
+Rendered /usr/local/lib/ruby/gems/1.9.1/gems/actionpack-3.1.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-09-19 16:37:45 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.1ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (48.1ms)
+Compiled application.css  (0ms)  (pid 4379)
+Compiled application.js  (15ms)  (pid 4379)
+Compiled jquery.js  (7ms)  (pid 4379)
+Compiled jquery_ujs.js  (10ms)  (pid 4379)
+Completed 200 OK in 97ms (Views: 96.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-19 16:37:45 -0700
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-19 16:37:45 -0700
+Served asset /jquery.js - 200 OK (18ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-19 16:37:45 -0700
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-19 16:37:45 -0700
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-10-12 08:45:11 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (35.5ms)
+Compiled application.css  (8ms)  (pid 7286)
+Compiled application.js  (19ms)  (pid 7286)
+Compiled jquery.js  (14ms)  (pid 7286)
+Compiled jquery_ujs.js  (68ms)  (pid 7286)
+Completed 200 OK in 315ms (Views: 313.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-12 08:45:13 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-12 08:45:13 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-12 08:45:13 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-12 08:45:13 -0700
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-10-12 08:46:16 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (11.4ms)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-12 08:46:16 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:16 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:16 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:16 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+  Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XQQqtQ7yvvENx8j75TlFdDMglLryxZIF2pQ94xOehqY=", "movie"=>{"title"=>"Transformer:revenge", "rating"=>"G", "release_date(1i)"=>"2012", "release_date(2i)"=>"10", "release_date(3i)"=>"12"}, "commit"=>"Save Changes"}
+  [1m[35mSQL (34.3ms)[0m  INSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Fri, 12 Oct 2012 15:46:48 UTC +00:00], ["description", nil], ["rating", "G"], ["release_date", Fri, 12 Oct 2012 00:00:00 UTC +00:00], ["title", "Transformer:revenge"], ["updated_at", Fri, 12 Oct 2012 15:46:48 UTC +00:00]]
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 76ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (5.2ms)[0m  [1mSELECT "movies".* FROM "movies" [0m
+Rendered movies/index.html.haml within layouts/application (10.8ms)
+Completed 200 OK in 23ms (Views: 16.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-12 08:46:48 -0700
+Served asset /jquery.js - 304 Not Modified (0ms)
